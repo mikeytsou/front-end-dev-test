@@ -18,13 +18,26 @@ class Slider extends Component {
     });
   }
 
+  renderSlides() {
+    const { images } = this.state;
+    let slides = [];
+
+    images.forEach((img, idx) => {
+      slides.push(
+        <Slide key={idx} images={images[idx].image} />
+      );
+    });
+
+    return slides;
+  }
+
   render() {
     const { images } = this.state;
 
     return (
       <div className="slider">
         <div className="slider-wrapper">
-
+          {this.renderSlides()}
         </div>
       </div>
     );

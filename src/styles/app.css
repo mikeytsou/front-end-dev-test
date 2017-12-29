@@ -17,6 +17,18 @@ body {
   position: relative;
   width: 100%;
   height: 600px;
+  margin: 0 auto;
   overflow: hidden;
-  white-space: nowrap;
-  border: 1px red solid; }
+  white-space: nowrap; }
+  .slider .slider-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: transform ease-out 0.45s; }
+    .slider .slider-wrapper .slide {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 60%; }

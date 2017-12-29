@@ -2,7 +2,7 @@ import React from 'react';
 
 const Slide = ({ images }) => {
   let styles = {
-    backgroundImage: `url(images/${images}.jpg)`
+    backgroundImage: `url(images/${images})`
   }
 
   return (
