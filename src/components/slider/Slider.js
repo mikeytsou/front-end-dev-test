@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Slide from './Slide';
+import Dots from './Dots';
+
 
 class Slider extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      images: []
+      images: [],
+      index: 0,
+      sliderWidth: 0
     }
   }
 
@@ -31,14 +35,22 @@ class Slider extends Component {
     return slides;
   }
 
+
+
   render() {
-    const { images } = this.state;
+    const { images, index } = this.state;
 
     return (
       <div className="slider">
         <div className="slider-wrapper">
           {this.renderSlides()}
         </div>
+
+        <Dots
+          index={index}
+          quantity={images.length}
+          dotClick={this.handleDotClick}
+        />
       </div>
     );
   }
