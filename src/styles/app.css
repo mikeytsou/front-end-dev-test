@@ -12,3 +12,11 @@ body {
   height: 60px; }
   .header img {
     width: 150px; }
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 1px red solid; }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Slide from './Slide';
 
 class Slider extends Component {
   constructor(props) {
@@ -22,7 +23,9 @@ class Slider extends Component {
 
     return (
       <div className="slider">
+        <div className="slider-wrapper">
 
+        </div>
       </div>
     );
   }
