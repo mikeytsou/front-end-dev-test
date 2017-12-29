@@ -11,7 +11,7 @@ class Slider extends Component {
     this.state = {
       images: [],
       index: 0,
-      sliderWidth: 0
+      slideWidthValue: 0
     }
   }
 
@@ -35,7 +35,29 @@ class Slider extends Component {
     return slides;
   }
 
+  handleDotClick = i => {
+    const { index } = this.state;
 
+    if(i === index) return;
+
+    if(i > index) {
+      this.setState({
+        index: i,
+        slideWidthValue: -(i * this.slideWidth())
+      });
+    }
+    else {
+      this.setState({
+        index: i,
+        slideWidthValue: this.state.slideWidthValue += ((this.state.index - 1) * (this.slideWidth()))
+      });
+    }
+  }
+
+  slideWidth() {
+    const slide = document.querySelector('.slide');
+    return slide.clientWidth;
+  }
 
   render() {
     const { images, index } = this.state;
