@@ -11,10 +11,15 @@ class Slider extends Component {
   }
 
   componentDidMount() {
-
+    axios.get('images.json')
+    .then(res => {
+      this.setState({ images: res.data })
+    });
   }
 
   render() {
+    const { images } = this.state;
+
     return (
       <div className="slider">
 
