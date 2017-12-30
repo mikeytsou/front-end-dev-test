@@ -1,0 +1,29 @@
+{
+  "images":
+    [
+      {
+        "image": "hero-img1.jpg"
+      },
+      {
+        "image": "hero-img2.jpg"
+      },
+      {
+        "image": "hero-img3.jpg"
+      }
+    ],
+  "infoTextOne":
+    [
+      {
+        "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."
+      },
+      {
+        "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."
+      },
+      {
+        "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."
+      },
+      {
+        "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."
+      }
+    ]
+}
