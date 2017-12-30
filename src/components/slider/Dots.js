@@ -10,6 +10,7 @@ const Dots = ({ index, quantity, dotClick }) => {
     dots.push(
       <Dot
         key={i}
+        id={i}
         active={isActive}
         dotClick={dotClick}
       />

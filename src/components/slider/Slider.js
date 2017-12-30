@@ -41,15 +41,15 @@ class Slider extends Component {
     if(i === index) return;
 
     if(i > index) {
-      this.setState({
+      return this.setState({
         index: i,
         slideWidthValue: -(i * this.slideWidth())
       });
     }
     else {
-      this.setState({
+      return this.setState({
         index: i,
-        slideWidthValue: this.state.slideWidthValue += ((this.state.index - 1) * (this.slideWidth()))
+        slideWidthValue: this.state.slideWidthValue += ((this.state.index - i) * (this.slideWidth()))
       });
     }
   }
@@ -60,11 +60,14 @@ class Slider extends Component {
   }
 
   render() {
-    const { images, index } = this.state;
+    const { images, index, slideWidthValue } = this.state;
+    let styles = {
+      transform: `translateX(${slideWidthValue}px)`
+    }
 
     return (
       <div className="slider">
-        <div className="slider-wrapper">
+        <div className="slider-wrapper" style={styles}>
           {this.renderSlides()}
         </div>
 
