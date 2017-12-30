@@ -16,9 +16,9 @@ class Slider extends Component {
   }
 
   componentDidMount() {
-    axios.get('images.json')
+    axios.get('data.json')
     .then(res => {
-      this.setState({ images: res.data })
+      this.setState({ images: res.data.images })
     });
   }
 
