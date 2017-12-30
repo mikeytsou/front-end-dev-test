@@ -25,6 +25,21 @@ body {
   }
 }
 
+// Button
+.ui.color.button {
+  background: linear-gradient(to right, #f36819, #f7931d);
+  color: #fff;
+  box-shadow: 3px 3px 2px #888888;
+
+  &:hover {
+    background: linear-gradient(to right, #f36819, #f7931d);
+    color: #fff;
+    box-shadow: 1px 1px 0.5px #888888;
+    transition: transform ease-out .1s;
+    transform: scale(1.1);
+  }
+}
+
 // Slider
 .slider {
   position: relative;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SectionHeader from '../SectionHeader';
+import Button from '../../Button';
 
 class DemoBoard extends Component {
   render() {
@@ -8,7 +9,8 @@ class DemoBoard extends Component {
         <SectionHeader description={this.props.description} />
 
         <div>
-          <p></p>
+          <p>HELLO</p>
+          <Button />
         </div>
       </div>
     );
