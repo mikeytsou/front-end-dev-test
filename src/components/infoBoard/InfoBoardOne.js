@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import InfoBoardTitle from './InfoBoardTitle';
 
 class InfoBoardOne extends Component {
   constructor(props) {
@@ -21,8 +22,8 @@ class InfoBoardOne extends Component {
     const { text } = this.state;
     console.log(text)
     return (
-      <div className="info-board-one">
-
+      <div className="info-board">
+        <InfoBoardTitle />
       </div>
     );
   }
