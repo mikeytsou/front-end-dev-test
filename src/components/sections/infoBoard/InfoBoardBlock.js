@@ -1,5 +1,5 @@
 import React from 'react';
-import page from '../../svgFiles/page-icon.svg';
+import page from '../../../svgFiles/page-icon.svg';
 
 const InfoBoardBlock = ({ text }) => {
   return (

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import InfoBoardHeader from './InfoBoardHeader';
+import SectionHeader from '../SectionHeader';
 import InfoBoardBlock from './InfoBoardBlock';
 
-class InfoBoardOne extends Component {
+class InfoBoard extends Component {
   constructor(props) {
     super(props);
 
@@ -15,7 +15,7 @@ class InfoBoardOne extends Component {
   componentDidMount() {
     axios.get('data.json')
     .then(res => {
-      this.setState({ texts: res.data.infoTextOne })
+      this.setState({ texts: res.data.infoBoard })
     });
   }
 
@@ -33,11 +33,9 @@ class InfoBoardOne extends Component {
   }
 
   render() {
-    // const { texts } = this.state;
-
     return (
-      <div className="info-board">
-        <InfoBoardHeader />
+      <div className="section">
+        <SectionHeader description={this.props.description} />
 
         <div className="grid">
           {this.renderBlock()}
@@ -47,4 +45,8 @@ class InfoBoardOne extends Component {
   }
 }
 
-export default InfoBoardOne;
+InfoBoard.defaultProps = {
+  description: "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef. Nisi eu dolore, in velit id mollit ham hock. Qui strip steak short ribs, pork turducken ball tip ipsum."
+}
+
+export default InfoBoard;

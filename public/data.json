@@ -1,5 +1,5 @@
 {
-  "images":
+  "slider":
     [
       {
         "image": "hero-img1.jpg"
@@ -11,7 +11,7 @@
         "image": "hero-img3.jpg"
       }
     ],
-  "infoTextOne":
+  "infoBoard":
     [
       {
         "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."

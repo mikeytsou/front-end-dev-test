@@ -12,7 +12,7 @@ body {
   flex-direction: column;
 }
 
-// HEADER
+// Header
 .header {
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
   }
 }
 
-// SLIDER
+// Slider
 .slider {
   position: relative;
   width: 100%;
@@ -78,14 +78,16 @@ body {
   }
 }
 
-// INFOBOARDONE
-.info-board {
+// InfoBoard
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
-  // width: 100%;
-  // height: 500px;
+
+  &:nth-child(even) {
+    background-color: #f5f5f5;
+  }
 
   .grid {
     display: flex;
@@ -94,7 +96,6 @@ body {
     width: 100%;
 
     .block {
-  // border: 1px solid red;
       padding: 25px;
       flex-basis: 20%;
       text-align: center;
@@ -102,7 +103,7 @@ body {
   }
 }
 
-.title {
+.section-header {
   h3 {
     text-transform: uppercase;
     font-size: 32px;
@@ -129,10 +130,12 @@ body {
   }
 }
 
-// MEDIA QUERIES
+// Media Queries
 @media (max-width: 1050px) {
-  .info-board {
+  .section {
+
     .grid {
+
       .block {
         flex-basis: 40%;
         padding: 20px;
@@ -142,8 +145,10 @@ body {
 }
 
 @media (max-width: 700px) {
-  .info-board {
+  .section {
+
     .grid {
+
       .block {
         flex-basis: 100%;
         padding: 20px;
