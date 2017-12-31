@@ -40,5 +40,22 @@
         "text": "Reprehenderit commodo in et pork belly pork loin laboris.",
         "percentage": "97%"
       }
+    ],
+  "checkerBoard":
+    [
+      {
+        "title": "T-bone pork loin dolor laborum anim lorem, capicola aliquip.",
+        "text": "T-bone pork loin dolor laborum anim lorem, capicola aliquip."
+      },
+      {
+        "image": "checker-img1.jpg"
+      },
+      {
+        "title": "T-bone pork loin dolor laborum anim lorem, capicola aliquip.",
+        "text": "T-bone pork loin dolor laborum anim lorem, capicola aliquip."
+      },
+      {
+        "image": "checker-img2.jpg"
+      }
     ]
 }

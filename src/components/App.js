@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Slider from './slider/Slider';
+import Slider from './sections/slider/Slider';
 import InfoBoard from './sections/infoBoard/InfoBoard';
 import DemoBoard from './sections/demoBoard/DemoBoard';
+import CheckerBoard from './sections/checkerBoard/CheckerBoard';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Slider />
         <InfoBoard />
         <DemoBoard />
+        <CheckerBoard />
       </div>
     );
   }
