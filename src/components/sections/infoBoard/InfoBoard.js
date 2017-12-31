@@ -34,19 +34,19 @@ class InfoBoard extends Component {
 
   render() {
     return (
-      <div className="section">
-        <SectionHeader description={this.props.description} />
+      <section className="info-board">
+        <SectionHeader description={this.props.sectionHeaderP} />
 
         <div className="grid">
           {this.renderBlock()}
         </div>
-      </div>
+      </section>
     );
   }
 }
 
 InfoBoard.defaultProps = {
-  description: "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef. Nisi eu dolore, in velit id mollit ham hock. Qui strip steak short ribs, pork turducken ball tip ipsum."
+  sectionHeaderP: "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef. Nisi eu dolore, in velit id mollit ham hock. Qui strip steak short ribs, pork turducken ball tip ipsum."
 }
 
 export default InfoBoard;

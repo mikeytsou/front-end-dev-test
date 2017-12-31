@@ -66,7 +66,7 @@ class Slider extends Component {
     }
 
     return (
-      <div className="slider">
+      <section className="slider">
         <div className="slider-wrapper" style={styles}>
           {this.renderSlides()}
         </div>
@@ -76,7 +76,7 @@ class Slider extends Component {
           quantity={images.length}
           dotClick={this.handleDotClick}
         />
-      </div>
+      </section>
     );
   }
 }

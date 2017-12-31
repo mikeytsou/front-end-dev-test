@@ -9,6 +9,33 @@ body {
   display: flex;
   flex-direction: column; }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0; }
+  section:nth-child(even) {
+    background-color: #f5f5f5; }
+  section .section-header h3 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-style: bold;
+    margin-bottom: 30px;
+    text-align: center; }
+  section .section-header p {
+    max-width: 800px;
+    line-height: 2;
+    padding: 0 20px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: "Roboto"; }
+  section .section-header hr {
+    width: 300px;
+    height: 3px;
+    background-color: #1676DD;
+    border: 0;
+    margin-bottom: 30px; }
+
 .header {
   display: flex;
   justify-content: center;
@@ -19,21 +46,27 @@ body {
     width: 150px; }
 
 .ui.color.button {
+  position: relative;
   background: linear-gradient(to right, #f36819, #f7931d);
   color: #fff;
-  box-shadow: 3px 3px 2px #888888; }
+  box-shadow: 3px 3px 2px #888888;
+  width: 215px; }
   .ui.color.button:hover {
     background: linear-gradient(to right, #f36819, #f7931d);
     color: #fff;
-    box-shadow: 1px 1px 0.5px #888888;
     transition: transform ease-out .1s;
-    transform: scale(1.1); }
+    transform: scale(1.05); }
+  .ui.color.button:active {
+    top: 1px;
+    transition: transform ease-out .1s;
+    transform: scale(1.03); }
 
 .slider {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 700px;
   margin: 0 auto;
+  padding-top: 0;
   overflow: hidden;
   white-space: nowrap; }
   .slider .slider-wrapper {
@@ -48,72 +81,54 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 50% 60%; }
+  .slider .dots-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+    padding: 5px 0; }
+    .slider .dots-container .dot {
+      background: #222;
+      display: inline-block;
+      padding: 10px;
+      margin-right: 5px;
+      cursor: pointer;
+      border-radius: 50%; }
+      .slider .dots-container .dot:hover {
+        transition: transform ease-out .1s;
+        transform: scale(1.2); }
+    .slider .dots-container .active {
+      background: #fff; }
 
-.dots-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 9999;
-  padding: 5px 0; }
-  .dots-container .dot {
-    background: #222;
-    display: inline-block;
-    padding: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    border-radius: 50%; }
-    .dots-container .dot:hover {
-      transition: transform ease-out .1s;
-      transform: scale(1.2); }
-  .dots-container .active {
-    background: #fff; }
-
-.section {
+.info-board .grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 0; }
-  .section:nth-child(even) {
-    background-color: #f5f5f5; }
-  .section .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%; }
-    .section .grid .block {
-      padding: 25px;
-      flex-basis: 20%;
-      text-align: center; }
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+  .info-board .grid .block {
+    padding: 25px;
+    flex-basis: 20%;
+    text-align: center; }
 
-.section-header h3 {
-  text-transform: uppercase;
-  font-size: 32px;
-  font-style: bold;
-  margin-bottom: 30px;
-  text-align: center; }
-
-.section-header p {
-  max-width: 800px;
-  line-height: 2;
-  padding: 0 20px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: "Roboto"; }
-
-.section-header hr {
-  width: 300px;
-  height: 3px;
-  background-color: #1676DD;
-  border: 0;
-  margin-bottom: 30px; }
+.demo-board .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+  .demo-board .grid .blurb {
+    flex-basis: 50%;
+    padding: 25px; }
+  .demo-board .grid .button-container {
+    border: 1px solid red;
+    flex-basis: 50%; }
 
 @media (max-width: 1050px) {
-  .section .grid .block {
+  .info-board .grid .block {
     flex-basis: 40%;
     padding: 20px; } }
 
 @media (max-width: 700px) {
-  .section .grid .block {
+  .info-board .grid .block {
     flex-basis: 100%;
     padding: 20px; } }
