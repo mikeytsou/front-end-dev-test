@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import SectionHeader from '../SectionHeader';
 import Button from '../../Button';
-import DemoBoardData from './DemoBoardData';
+import DemoBoardBlock from './DemoBoardBlock';
 
 class DemoBoard extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class DemoBoard extends Component {
 
     demographics.forEach((demo, idx) => {
       blocks.push(
-        <DemoBoardData
+        <DemoBoardBlock
           key={idx}
           text={demographics[idx].text}
           percentage={demographics[idx].percentage}
@@ -38,7 +38,6 @@ class DemoBoard extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <section className="demo-board">
         <SectionHeader description={this.props.sectionHeaderP} />

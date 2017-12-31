@@ -164,7 +164,6 @@ section {
 .demo-board {
 
   .grid {
-    // border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -191,8 +190,42 @@ section {
       max-width: 400px;
 
       p {
-        width: 150px;
+        width: 250px;
         margin: auto;
+      }
+    }
+  }
+}
+
+// CheckerBoard
+.checker-board {
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+
+
+    .block {
+    // border: 1px solid red;
+      padding: 50px;
+      flex-basis: 50%;
+
+      .small {
+
+        div {
+          margin: 50px auto;
+        }
+      }
+
+      .large {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        // background-clip: content-box;
       }
     }
   }
@@ -209,6 +242,19 @@ section {
       .block {
         flex-basis: 40%;
         padding: 20px;
+      }
+    }
+  }
+
+  .demo-board {
+
+    .grid {
+
+      .block {
+
+        p {
+          width: 100px;
+        }
       }
     }
   }
@@ -238,6 +284,14 @@ section {
         flex-basis: 50%;
       }
 
+      .block {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  .checker-board {
+    .grid {
       .block {
         flex-basis: 100%;
       }
