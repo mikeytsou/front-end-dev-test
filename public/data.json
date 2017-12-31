@@ -25,5 +25,20 @@
       {
         "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."
       }
+    ],
+  "demoBoard":
+    [
+      {
+        "text": "Reprehenderit commodo in et pork belly pork loin laboris.",
+        "percentage": "94%"
+      },
+      {
+        "text": "Reprehenderit commodo in et pork belly pork loin laboris.",
+        "percentage": "91%"
+      },
+      {
+        "text": "Reprehenderit commodo in et pork belly pork loin laboris.",
+        "percentage": "97%"
+      }
     ]
 }

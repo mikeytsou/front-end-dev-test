@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SectionHeader from '../SectionHeader';
 import Button from '../../Button';
+import DemoBoardData from './DemoBoardData';
 
 class DemoBoard extends Component {
   render() {
@@ -16,6 +17,8 @@ class DemoBoard extends Component {
           <div className="button-container">
             <Button />
           </div>
+
+          <DemoBoardData />
         </div>
       </section>
     );

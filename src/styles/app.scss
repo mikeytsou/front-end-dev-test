@@ -136,7 +136,7 @@ section {
     }
 
     .active {
-      background: #fff;
+      background: #999;
     }
   }
 }
@@ -162,18 +162,22 @@ section {
 .demo-board {
 
   .grid {
-        display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+
     .blurb {
       flex-basis: 50%;
       padding: 25px;
     }
 
     .button-container {
-    border: 1px solid red;
-      flex-basis: 50%;
+    // border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 25%;
     }
   }
 }
@@ -202,6 +206,16 @@ section {
       .block {
         flex-basis: 100%;
         padding: 20px;
+      }
+    }
+  }
+
+  .demo-board {
+
+    .grid {
+
+      .blurb {
+        flex-basis: 75%;
       }
     }
   }
