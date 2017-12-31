@@ -105,7 +105,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  max-width: 1500px;
+  margin: auto; }
   .info-board .grid .block {
     padding: 25px;
     flex-basis: 20%;
@@ -115,7 +117,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  max-width: 1500px;
+  margin: auto; }
   .demo-board .grid .blurb {
     flex-basis: 50%;
     padding: 25px; }
@@ -124,6 +128,11 @@ section {
     justify-content: center;
     align-items: center;
     flex-basis: 25%; }
+  .demo-board .grid .block {
+    padding: 50px 25px;
+    flex-basis: 30%;
+    text-align: center;
+    max-width: 400px; }
 
 @media (max-width: 1050px) {
   .info-board .grid .block {
@@ -135,4 +144,8 @@ section {
     flex-basis: 100%;
     padding: 20px; }
   .demo-board .grid .blurb {
-    flex-basis: 75%; } }
+    flex-basis: 75%; }
+  .demo-board .grid .button-container {
+    flex-basis: 50%; }
+  .demo-board .grid .block {
+    flex-basis: 100%; } }

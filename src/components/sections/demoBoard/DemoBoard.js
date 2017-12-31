@@ -1,10 +1,44 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import SectionHeader from '../SectionHeader';
 import Button from '../../Button';
 import DemoBoardData from './DemoBoardData';
 
 class DemoBoard extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      demographics: []
+    }
+  }
+
+  componentDidMount() {
+    axios.get('data.json')
+    .then(res => {
+      this.setState({ demographics: res.data.demoBoard });
+    });
+  }
+
+  renderBlock() {
+    const { demographics } = this.state;
+    let blocks = [];
+
+    demographics.forEach((demo, idx) => {
+      blocks.push(
+        <DemoBoardData
+          key={idx}
+          text={demographics[idx].text}
+          percentage={demographics[idx].percentage}
+        />
+      );
+    });
+
+    return blocks;
+  }
+
   render() {
+    console.log(this.state)
     return (
       <section className="demo-board">
         <SectionHeader description={this.props.sectionHeaderP} />
@@ -18,7 +52,7 @@ class DemoBoard extends Component {
             <Button />
           </div>
 
-          <DemoBoardData />
+          {this.renderBlock()}
         </div>
       </section>
     );

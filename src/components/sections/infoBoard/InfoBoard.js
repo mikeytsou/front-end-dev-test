@@ -15,7 +15,7 @@ class InfoBoard extends Component {
   componentDidMount() {
     axios.get('data.json')
     .then(res => {
-      this.setState({ texts: res.data.infoBoard })
+      this.setState({ texts: res.data.infoBoard });
     });
   }
 
