@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import envelope from '../../../svgFiles/envelope-icon.svg';
 import SectionHeader from '../SectionHeader';
 import InfoBoardBlock from './InfoBoardBlock';
 
@@ -35,6 +36,10 @@ class InfoBoard extends Component {
   render() {
     return (
       <section className="info-board">
+        <div className="sticky">
+        <a href="#"><img src={envelope} alt="envelope" /></a>
+        </div>
+
         <SectionHeader description={this.props.sectionHeaderP} />
 
         <div className="grid">

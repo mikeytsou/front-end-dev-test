@@ -15,6 +15,7 @@ body {
   flex-direction: column;
 }
 
+
 // Section
 section {
   display: flex;
@@ -36,6 +37,7 @@ section {
       margin-bottom: 30px;
       text-align: center;
       text-shadow: $section-header-shadow;
+      clear: both;
     }
 
     p {
@@ -62,6 +64,7 @@ section {
   }
 }
 
+
 // Header
 .header {
   display: flex;
@@ -74,6 +77,7 @@ section {
     width: 150px;
   }
 }
+
 
 // Button
 .ui.color.button {
@@ -96,6 +100,7 @@ section {
     transform: scale(1.03);
   }
 }
+
 
 // Slider
 .slider {
@@ -151,8 +156,33 @@ section {
   }
 }
 
+
 // InfoBoard
 .info-board {
+
+  .sticky {
+    background-color: $secondary-color;
+    width: 50px;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    float: right;
+    top: 0;
+    bottom: 500px;
+
+
+
+
+    img {
+      width: 50px;
+      padding: 5px;
+    }
+  }
 
   .grid {
     display: flex;
@@ -173,6 +203,7 @@ section {
     }
   }
 }
+
 
 // DemoBoard
 .demo-board {
@@ -229,6 +260,7 @@ section {
   }
 }
 
+
 // CheckerBoard
 .checker-board {
 
@@ -242,7 +274,6 @@ section {
 
 
     .block {
-    // border: 1px solid red;
       padding: 50px;
       flex-basis: 50%;
 
@@ -275,13 +306,14 @@ section {
         @keyframes slidefade {
           100% {
             opacity: 1;
-            margin: 0;
+            margin-right: 0;
           }
         }
       }
     }
   }
 }
+
 
 // Footer
 .footer {
@@ -300,13 +332,13 @@ section {
 
   div {
     display: flex;
-    // list-style: none;
 
     i {
       margin-left: 16px;
     }
   }
 }
+
 
 // Media Queries
 @media (max-width: 1050px) {
