@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import './variables.scss';
+
+* {
+  font-family: "Roboto", sans-serif;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 .app {
@@ -27,9 +29,9 @@ section {
 
   .section-header {
 
-    h3 {
+    h1 {
       text-transform: uppercase;
-      font-size: 42px;
+      font-size: 45px;
       font-style: bold;
       margin-bottom: 30px;
       text-align: center;
@@ -42,10 +44,12 @@ section {
       padding: 0 20px;
       margin: 30px auto;
       text-align: center;
+      font-size: 15px;
+      font-weight: bold;
     }
 
     span {
-      color: #f36819;
+      color: $secondary-color;
     }
 
     hr {
@@ -162,6 +166,10 @@ section {
       padding: 25px;
       flex-basis: 20%;
       text-align: center;
+
+      p {
+        line-height: 1.5;
+      }
     }
   }
 }
@@ -180,6 +188,8 @@ section {
     .blurb {
       flex-basis: 50%;
       padding: 25px;
+      font-size: 15px;
+      line-height: 2;
     }
 
     .button-container {
@@ -198,11 +208,22 @@ section {
       h4 {
         font-size: 50px;
         text-shadow: $percentage-shadow;
+        animation: percentages 5s linear infinite;
+
+        @keyframes percentages {
+          0%   {font-size: 70px}
+          25%  {font-size: 80px}
+          50%  {font-size: 90px}
+          75%  {font-size: 80px}
+          100% {font-size: 70px}
+        }
       }
 
       p {
+        font-size: 20px;
         width: 250px;
         margin: auto;
+        color: $secondary-color;
       }
     }
   }
@@ -229,6 +250,16 @@ section {
 
         div {
           margin: 50px auto;
+
+          h4 {
+            font-size: 20px;
+            color: $secondary-color;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 2;
+          }
         }
       }
 
@@ -330,6 +361,10 @@ section {
 
       .block {
         flex-basis: 100%;
+
+        p {
+          width: 250px;
+        }
       }
     }
   }
