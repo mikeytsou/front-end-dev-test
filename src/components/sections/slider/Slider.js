@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Slide from './Slide';
 import Dots from './Dots';
+import Button from '../../Button';
 
 
 class Slider extends Component {
@@ -71,6 +72,13 @@ class Slider extends Component {
           {this.renderSlides()}
         </div>
 
+        <div className="slider-info">
+          <div className="text">
+            {this.props.sliderTitle}
+          </div>
+          <Button />
+        </div>
+
         <Dots
           index={index}
           quantity={images.length}
@@ -79,6 +87,10 @@ class Slider extends Component {
       </section>
     );
   }
+}
+
+Slider.defaultProps = {
+  sliderTitle: "Nisi eu dolore, in velit id mollit ham hock."
 }
 
 export default Slider;

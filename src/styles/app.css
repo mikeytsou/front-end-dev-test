@@ -107,6 +107,18 @@ section {
         transform: scale(1.2); }
     .slider .dots-container .active {
       background: #999; }
+  .slider .slider-info {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    padding: 10px;
+    z-index: 1000; }
+    .slider .slider-info .text {
+      font-size: 50px;
+      font-weight: bold;
+      color: #fff;
+      padding: 30px 0;
+      text-shadow: 3px 3px 2px #999; }
 
 .info-board .sticky {
   background-color: #f36819;
@@ -233,6 +245,8 @@ section {
       margin-left: 16px; }
 
 @media (max-width: 1050px) {
+  .slider .slider-info .text {
+    font-size: 25px; }
   .info-board .grid .block {
     flex-basis: 40%;
     padding: 20px; }
