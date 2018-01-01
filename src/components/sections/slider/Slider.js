@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Slide from './Slide';
 import Dots from './Dots';
-
+import Button from '../../Button';
 
 class Slider extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Slider extends Component {
   componentDidMount() {
     axios.get('data.json')
     .then(res => {
-      this.setState({ images: res.data.images })
+      this.setState({ images: res.data.slider });
     });
   }
 
@@ -66,9 +66,17 @@ class Slider extends Component {
     }
 
     return (
-      <div className="slider">
+      <section className="slider">
         <div className="slider-wrapper" style={styles}>
           {this.renderSlides()}
+        </div>
+
+        <div className="slider-info">
+          <div className="text">
+            {this.props.sliderTitle}
+          </div>
+
+          <Button />
         </div>
 
         <Dots
@@ -76,9 +84,13 @@ class Slider extends Component {
           quantity={images.length}
           dotClick={this.handleDotClick}
         />
-      </div>
+      </section>
     );
   }
+}
+
+Slider.defaultProps = {
+  sliderTitle: "Nisi eu dolore, in velit id mollit ham hock."
 }
 
 export default Slider;

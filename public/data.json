@@ -1,5 +1,5 @@
 {
-  "images":
+  "slider":
     [
       {
         "image": "hero-img1.jpg"
@@ -11,7 +11,7 @@
         "image": "hero-img3.jpg"
       }
     ],
-  "infoTextOne":
+  "infoBoard":
     [
       {
         "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."
@@ -24,6 +24,38 @@
       },
       {
         "text": "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola est, ut ham hock fugiat sausage shoulder labore adipisicing jowl beef."
+      }
+    ],
+  "demoBoard":
+    [
+      {
+        "text": "Reprehenderit commodo in et pork belly pork loin laboris.",
+        "percentage": "94%"
+      },
+      {
+        "text": "Reprehenderit commodo in et pork belly pork loin laboris.",
+        "percentage": "91%"
+      },
+      {
+        "text": "Reprehenderit commodo in et pork belly pork loin laboris.",
+        "percentage": "97%"
+      }
+    ],
+  "checkerBoard":
+    [
+      {
+        "image": "checker-img1.jpg"
+      },
+      {
+        "title": "T-bone pork loin dolor laborum anim lorem, capicola aliquip.",
+        "text": "Kevin fatback reprehenderit, short ribs occaecat porchetta bresaola turducken. Aliquip aute pork belly chuck ground round shankle irure kielbasa shoulder meatloaf elit ball tip swine esse. Est landjaeger meatloaf ball tip, ut do salami jerky eiusmod ea velit aute. Voluptate nisi strip steak pork chop, capicola landjaeger filet mignon tri-tip."
+      },
+      {
+        "title": "T-bone pork loin dolor laborum anim lorem, capicola aliquip.",
+        "text": "Kevin fatback reprehenderit, short ribs occaecat porchetta bresaola turducken. Aliquip aute pork belly chuck ground round shankle irure kielbasa shoulder meatloaf elit ball tip swine esse. Est landjaeger meatloaf ball tip, ut do salami jerky eiusmod ea velit aute. Voluptate nisi strip steak pork chop, capicola landjaeger filet mignon tri-tip."
+      },
+      {
+        "image": "checker-img2.jpg"
       }
     ]
 }

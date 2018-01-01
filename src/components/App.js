@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Slider from './slider/Slider';
-import InfoBoardOne from './infoBoard/InfoBoardOne';
+import Slider from './sections/slider/Slider';
+import InfoBoard from './sections/infoBoard/InfoBoard';
+import DemoBoard from './sections/demoBoard/DemoBoard';
+import CheckerBoard from './sections/checkerBoard/CheckerBoard';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -9,7 +12,10 @@ class App extends Component {
       <div className="app">
         <Header />
         <Slider />
-        <InfoBoardOne />
+        <InfoBoard />
+        <DemoBoard />
+        <CheckerBoard />
+        <Footer />
       </div>
     );
   }
