@@ -37,7 +37,7 @@ class InfoBoard extends Component {
     return (
       <section className="info-board">
         <div className="sticky">
-        <a href="#"><img src={envelope} alt="envelope" /></a>
+          <a href="mailto:test@test.com"><img src={envelope} alt="envelope" /></a>
         </div>
 
         <SectionHeader description={this.props.sectionHeaderP} />

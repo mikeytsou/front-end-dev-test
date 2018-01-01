@@ -4,7 +4,6 @@ import Slide from './Slide';
 import Dots from './Dots';
 import Button from '../../Button';
 
-
 class Slider extends Component {
   constructor(props) {
     super(props);
@@ -76,6 +75,7 @@ class Slider extends Component {
           <div className="text">
             {this.props.sliderTitle}
           </div>
+
           <Button />
         </div>
 

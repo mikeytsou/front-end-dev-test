@@ -6,9 +6,9 @@ const Footer = () => {
       <span>Created by Mike Tsou</span>
 
       <div>
-        <a href="#"><i class="black large facebook icon"></i></a>
-        <a href="#"><i class="black large twitter icon"></i></a>
-        <a href="#"><i class="black large mail icon"></i></a>
+        <a href="#"><i className="black large facebook icon"></i></a>
+        <a href="#"><i className="black large twitter icon"></i></a>
+        <a href="#"><i className="black large mail icon"></i></a>
       </div>
     </div>
   );
