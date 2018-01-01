@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import './variables.scss';
 
 body {
   margin: 0;
@@ -18,19 +19,21 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
+  box-shadow: $section-border-shadow;
 
   &:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: $section-bg-color;
   }
 
   .section-header {
 
     h3 {
       text-transform: uppercase;
-      font-size: 32px;
+      font-size: 42px;
       font-style: bold;
       margin-bottom: 30px;
       text-align: center;
+      text-shadow: $section-header-shadow;
     }
 
     p {
@@ -39,13 +42,16 @@ section {
       padding: 0 20px;
       margin: 30px auto;
       text-align: center;
-      font-family: "Roboto";
+    }
+
+    span {
+      color: #f36819;
     }
 
     hr {
       width: 300px;
       height: 3px;
-      background-color: #1676DD;
+      background-color: $main-bg-color;
       border: 0;
       margin-bottom: 30px;
     }
@@ -57,7 +63,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1676DD;
+  background-color: $main-bg-color;
   height: 60px;
 
   img {
@@ -70,7 +76,7 @@ section {
   position: relative;
   background: linear-gradient(to right, #f36819, #f7931d);
   color: #fff;
-  box-shadow: 3px 3px 2px #888888;
+  box-shadow: $button-shadow;
   width: 215px;
 
   &:hover {
@@ -149,7 +155,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 1500px;
+    max-width: $section-grid-max-width;
     margin: auto;
 
     .block {
@@ -168,7 +174,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 1500px;
+    max-width: $section-grid-max-width;
     margin: auto;
 
     .blurb {
@@ -189,6 +195,11 @@ section {
       text-align: center;
       max-width: 400px;
 
+      h4 {
+        font-size: 50px;
+        text-shadow: $percentage-shadow;
+      }
+
       p {
         width: 250px;
         margin: auto;
@@ -205,7 +216,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 1500px;
+    max-width: $section-grid-max-width;
     margin: auto;
 
 
@@ -225,13 +236,46 @@ section {
         height: 300px;
         background-size: cover;
         background-position: center;
-        // background-clip: content-box;
+        box-shadow: $image-shadow;
+        opacity: 0;
+        margin-right: 500px;
+        animation: slidefade 2s 1s forwards;
+
+        @keyframes slidefade {
+          100% {
+            opacity: 1;
+            margin: 0;
+          }
+        }
       }
     }
   }
 }
 
+// Footer
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $main-bg-color;
+  color: #000;
+  padding: 20px 0;
 
+  span {
+    text-transform: uppercase;
+    font-size: 14px;
+    align-self: center;
+  }
+
+  div {
+    display: flex;
+    // list-style: none;
+
+    i {
+      margin-left: 16px;
+    }
+  }
+}
 
 // Media Queries
 @media (max-width: 1050px) {
@@ -291,10 +335,21 @@ section {
   }
 
   .checker-board {
+
     .grid {
+
       .block {
         flex-basis: 100%;
       }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+
+    span {
+      text-align: center;
+      margin-bottom: 10px;
     }
   }
 }
