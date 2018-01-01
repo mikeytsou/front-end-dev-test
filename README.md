@@ -7,21 +7,21 @@ I created a 'data.json' file to store most of the text and images that were used
 
 ## Preview
 
-![](/public/images/github_slider.png)
-
 The Slider component has a slight slide animation whenever each dot is clicked. There is also a Button component and some text on top of the Slider.
 
-![](/public/images/github_infoBoard.png)
+![](/public/images/github_slider.png)
 
 The InfoBoard component makes use of the envelope and page SVG file. The envelope button links to an email.
 
-![](/public/images/github_demoBoard.png)
+![](/public/images/github_infoBoard.png)
 
 The DemoBoard component has some precentages with a slight pulsing animation. The Button component has also been reused here.
 
-![](/public/images/github_checkerBoard.png)
+![](/public/images/github_demoBoard.png)
 
 The Checkerboard component also has a slide and fade animation when the page loads with a one second delay. I would of liked it to animate on scroll but I didn't have enough time.
+
+![](/public/images/github_checkerBoard.png)
 
 
 ## Please also submit a small write up discussing
