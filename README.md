@@ -4,7 +4,7 @@
 
 ## Intro
 
-This webpage is random client page with a orthodontic theme. I created a 'data.json' file to store most of the text and images that were used on this assignment. I then used axios to pull the data out of the json file. The text is from Bacon Ipsum and images are from unsplashed. The webpage is completely responsive and makes use of flexbox. Animations were done with css transitions and transforms. I also used Sass and Semantic UI for some css elements.
+This webpage is a random client page with an orthodontic theme. I created a 'data.json' file to store most of the text and images that were used on this assignment. I then used axios to pull the data out of the json file. The text is from Bacon Ipsum and images are from Unsplashed. The webpage is completely responsive and makes use of flexbox. Animations were done with css transitions, transforms, and keyframes. I also used Sass and Semantic UI for some css elements.
 
 
 ## Preview
@@ -21,7 +21,7 @@ The DemoBoard component has some precentages with a slight pulsing animation. Th
 
 ![](/public/images/github_demoBoard.png)
 
-The Checkerboard component also has a slide and fade animation when the page loads with a one second delay. I would of liked it to animate on scroll but I didn't have enough time.
+The Checkerboard component also has a slide and fade animation when the page loads with a one second delay. I would've liked it to animate on scroll but I didn't have enough time.
 
 ![](/public/images/github_checkerBoard.png)
 
@@ -38,4 +38,4 @@ The Checkerboard component also has a slide and fade animation when the page loa
 
 3. What you enjoyed the most and why?
 
-> I really enjoyed using my creative and problem solving skills to complete this assignment. I love front-end development and had a blast, especially working with React and responsive design. 
+> I really enjoyed using my creative and problem solving skills to complete this assignment because to me, that is what  programming is all about. I love front-end development and had a blast, especially working with React and responsive design. 
