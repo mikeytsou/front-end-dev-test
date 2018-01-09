@@ -24,18 +24,3 @@ The DemoBoard component has some precentages with a slight pulsing animation. Th
 The Checkerboard component also has a slide and fade animation when the page loads with a one second delay. I would've liked it to animate on scroll but I didn't have enough time.
 
 ![](/public/images/github_checkerBoard.png)
-
-
-## Please also submit a small write up discussing
-
-1. What you technologies you used and why (if you only used html, css, and js please explain any templates or frameworks you may have used i.e. bootstrap)
-
-> I used React because it is one of my favorite technologies to work with. I'm still trying to improve my skills with React and I thought this would be a good opportunity. It might have been a gamble because using HTML, CSS, and JavaScript would certainly have been much easier, but I enjoyed using React.
-
-2. Any struggles you faced when developing with technology you chose?
-
-> I had some trouble working with SVG files because I've never used them before. I also wanted to use React Router but ended up not using it because I would've had to restructure some of my components and lack of time.
-
-3. What you enjoyed the most and why?
-
-> I really enjoyed using my creative and problem solving skills to complete this assignment because to me, that is what  programming is all about. I love front-end development and had a blast, especially working with React and responsive design. 
